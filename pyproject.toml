@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "celery&rabbitmq-learn"
+version = "0.1.0"
+description = ""
+authors = ["Foshati <amirrezafoshati@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.12.2"
+django = "^5.0.6"
+celery = "^5.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+## pyproject.toml
+[tool.mypy]
+plugins = ["django-stubs.mypy_plugin"]
